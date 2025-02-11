@@ -8,15 +8,22 @@ const ProductInfo = () => {
   ]
   return (
    <>
-   <ol>
-    <h1>list are</h1>
-        {product.map((x) => (
-          <li >
-            <p>Name: {x.name}</p>
-            <p>Price: {x.price}</p>
-            <p>Availability: {x.availability} in stock</p>
-          </li>
-        ))}
+  <ol>
+        <li>
+          <p>Name: {product[0].name}</p>
+          <p>Price: {product[0].price}</p>
+          <p>Availability: {product[0].availability} in stock</p>
+        </li>
+        <li>
+          <p>Name: {product[1].name}</p>
+          <p>Price: {product[1].price}</p>
+          <p>Availability: {product[1].availability} in stock</p>
+        </li>
+        <li>
+          <p>Name: {product[2].name}</p>
+          <p>Price: {product[2].price}</p>
+          <p>Availability: {product[2].availability} in stock</p>
+        </li>
       </ol>
    </>
   )
